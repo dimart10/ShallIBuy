@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Shall I Buy?
 
 You can use the [editor on GitHub](https://github.com/dimart10/ShallIBuy/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
