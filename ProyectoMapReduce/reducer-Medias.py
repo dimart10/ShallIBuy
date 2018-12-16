@@ -15,8 +15,6 @@ playerTotal = 0.0
 priceSum = 0
 priceTotal = 0.0
 
-next(sys.stdin)
-
 for line in sys.stdin:
 	values = line.split(" ")
 	score = values[0]
