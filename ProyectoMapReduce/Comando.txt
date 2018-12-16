@@ -3,8 +3,8 @@ POR SEPARADO
 python buscaNombre.py "(Nombre de tu juego)"
 Se indica si el juego ha sido encontrado, lo saca a "auxName.csv"
 
-python mapper-Parecidos.py | python reducer-Parecidos.py
-Esto te saca la lista de juegos similares en "auxParecidos.csv"
-
-python mapper-Medias.py | python reducer-Medias.py
+python mapper-Parecidos.py | python reducer-Parecidos.py | python reducer-Medias.py
 Saca las medias en "auxMedias.csv
+
+python mapper-Salida.py | python reducer-Salida.py
+Saca la opinion por consola
