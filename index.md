@@ -279,7 +279,11 @@ Deberia salir algo así:
 
 
 ## Extensiones
-Nuestra aplicación hace su trabajo, pero es limitada. Para mejorar este proyecto habíamos pensado en varias modificaciones o extensiones, las cuales, por falta de tiempo o desconocimiento, no hemos llegado a realizar. Por ejemplo, una manera de mejorar las recomendaciones de videojuegos sería utilizar un posible historial de ofertas para mostrar si es buen momento o no para comprarlo, pero no hemos encontrado un dataset adecuado para ello. Además, se podría hacer más clara la recomendación creando un CSV que mostrara por columnas, datos sobre el juego buscado. Y cómo no, seguramente haya maneras de mejorar nuestra claridad de código.
+Nuestra aplicación hace su trabajo, pero es limitada. Para mejorar este proyecto habíamos pensado en varias modificaciones o extensiones, las cuales, por falta de tiempo o desconocimiento, no hemos llegado a realizar:
+-Una manera de mejorar las recomendaciones de videojuegos sería utilizar un posible historial de ofertas para mostrar si es buen momento o no para comprarlo, pero no hemos encontrado un dataset adecuado para ello.
+-Se podría hacer más clara la recomendación creando un CSV que mostrara, por columnas, datos sobre el juego buscado.
+-Además, seguramente haya maneras de mejorar nuestra claridad de código.
+
 ## Conclusión y valoración general de proyecto
 A la hora de realizar este trabajo, nos hemos ido encontrando con diversos problemas. Los problemas iniciales han surgido en gran medida del poco conocimiento previo que poseíamos sobre las tecnologías y métodos utilizados. No estábamos familiarizados con el uso de Linux, al cual nos hemos ido acostumbrando. Además, nunca habíamos programado en Python, por lo que surgieron varios problemas de código.
 El desconocimiento o mal uso de lo anterior dicho hizo que no pudiéramos planificar del todo bien, ya que no sabíamos la cantidad de tiempo estimada que nos llevaría cada parte del proyecto. Así mismo, el reparto de tareas estaba desequilibrado y tuvimos que replanificar varias veces, lo que conllevaba una pérdida aún mayor de tiempo.
@@ -299,37 +303,3 @@ Somos un grupo de estudiantes del grado de Desarrollo de Videojuegos en la Unive
 - [Héctor Marcos](https://github.com/hectormr98)
 
 El proyecto lo realizamos para la asignatura de Cloud and Big Data, con el fin de aplicar los conceptos aprendidos. El resultado final es éste. Esperamos que sea de su agrado.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dimart10/ShallIBuy/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
-
