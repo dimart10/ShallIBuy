@@ -12,6 +12,7 @@ En nuestro proyecto solo usamos unas cuantas columnas. Las principales son el pr
 
 El proyecto se basa en el modelo map-reduce, usando como lenguaje python. Se realizan 3 fases de map-reduce hasta dar el resultado final.
 
+### Búsqueda inicial
 Antes de la primera fase map-reduce se busca al juego indicado por el usuario en el dataset y, si lo encuentra, guarda sus datos relevantes en un csv auxiliar "auxName.csv".
 
 **[buscaNombre.py](https://github.com/dimart10/ShallIBuy/blob/master/ProyectoMapReduce/buscaNombre.py)**
@@ -41,7 +42,7 @@ with open('games_features.csv') as csvfile:
     	print 'Juego encontrado.'
 ```
 
-Una vez encontrado el juego se ejecuta la primera fase de map-reduce: Parecidos. 
+### Fase 1 (Parecidos)
 En esta fase se buscan en el dataset los juegos que compartan al menos una categoría y tag con el juego a evaluar, de este modo se obtiene en otro csv "auxParecidos.csv" los datos relevantes de los juegos con los que lo compararemos.
 
 **[mapper-Parecidos.py](https://github.com/dimart10/ShallIBuy/blob/master/ProyectoMapReduce/mapper-Parecidos.py)**
@@ -96,7 +97,8 @@ with open('games_features.csv') as csvfile:
         print("Juegos parecidos encontrados")
 ```
 
-La segunda fase es "Medias", en esta se halla la media numérica de los valores relevantes de los juegos similares (ignorando los 0s, que indican que no se conocen los datos) y se sacan a otro archivo csv "auxMedias.csv"
+### Fase 2 (Medias)
+En esta se halla la media numérica de los valores relevantes de los juegos similares (ignorando los 0s, que indican que no se conocen los datos) y se sacan a otro archivo csv "auxMedias.csv"
 
 **[mapper-Medias.py](https://github.com/dimart10/ShallIBuy/blob/master/ProyectoMapReduce/mapper-Medias.py)**
 ```python
@@ -161,6 +163,82 @@ with open('auxMedias.csv', 'wb') as csvfile:
 	salidaCSV.writerow([scoreTotal/scoreSum, recomTotal/recomSum, ownerTotal/ownerSum, playerTotal/playerSum, priceTotal/priceSum])
 	print("Medias calculadas")
 ```
+
+### Fase 3 (Salida)
+En esta se opera sobre las medias obtenidas en la fase anterior y las compara con los valores del juego en auxName.csv. Finalmente, muestra el resultado de estas comparaciones por consola y da un veredicto sobre el juego.
+
+**[mapper-Salida.py](https://github.com/dimart10/ShallIBuy/blob/master/ProyectoMapReduce/mapper-Salida.py)**
+```python
+import sys
+import re
+import csv
+
+pesos = [10, 0.1, 0.1, 0.1, -1]
+
+with open('auxName.csv') as csvName:
+	with open('auxMedias.csv') as csvMedias:
+		readerName = csv.reader(csvName)
+		rowName = readerName.next() 
+		readerMedias = csv.reader(csvMedias)
+		rowMedias = readerMedias.next()
+
+		notas = [1, 1, 1, 1, 1]
+		for i in range(0, 5):
+			notas[i] = (float(rowName[i+21]) / float(rowMedias[i])) - 1
+
+ 		for i in range(0, 5):
+ 			print (notas[i]*pesos[i])
+ 		for i in range(0,6):
+ 			print (rowName[i+26])
+ ```
+
+**[reducer-Salida.py](https://github.com/dimart10/ShallIBuy/blob/master/ProyectoMapReduce/reducer-Salida.py)**
+```python
+from decimal import Decimal
+import sys
+import re
+import csv
+
+atributos = ["nota de metacritic", "recomendaciones", "numero de propietarios", "numero de jugadores", "precio", "-Fecha de lanzamiento: ", "-Soporta Mando: ", "-Es gratis: ", "-Soporta Windows: ", "-Soporta Linux: ", "-Soporta Mac: "]
+i = 0
+score = 0
+
+print ("")
+print ("----------------------VALORACIONES-------------------")
+print ("")
+
+for line in sys.stdin:
+	try:
+		comp = float(line)
+		score += comp
+		dec = round(comp,2)
+		if float(line) >= 0:
+			print ("-En el atributo " + atributos[i] + " el juego en cuestion es " + str(dec) + " veces superior a la media.")
+		elif float(line) < 0:
+			print ("-En el atributo " + atributos[i] + " el juego en cuestion es " + str(dec) + " veces inferior a la media.")
+
+	except ValueError:
+		print (atributos[i] + line)
+
+	print ("")
+	i+=1
+
+print ("Puntuacion final: " + str(score))
+
+if score > 10:
+	print "Un juego muy recomendable, muy superior a los de su tipo"
+elif score > 5:
+	print "El juego es bastante decente entre los de su tipo"
+elif score > 0:
+	print "Juego mediocre, encontraras mejores de su tipo"
+else:
+	print "Juego muy inferior a los demas, no se recomienda"
+
+print ("")
+print ("-----------------------------------------------------")
+print ("")
+```
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
@@ -193,36 +271,38 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
+### Sobre el proyecto
+
 ### Modo de uso
 
 Deberás descargarte el archivo mencionado en el apartado de dataset, junto a los archivos .py necesarios(buscaNombre, mapReduce de parecidos, medias y salida). Una vez descargados abre una shell que tenga instalada python y ejecuta la siguiente linea en ella:
-```
-python buscaNombre.py "(Nombre de tu juego)"
-```
-Poniendo el juego en cuestion entre las comillas. Es muy importante que el juego este exactamente escrito como en el dataset, asi que ten cuidado. Debería salir algo así:
+
+>**python buscaNombre.py "(Nombre de tu juego)"** poniendo el juego en cuestion entre las comillas. 
+
+Es muy importante que el juego este exactamente escrito como en el dataset, asi que ten cuidado. Debería salir algo así:
 
 ![Inicio](/buscaNombre.jpg)
 
 Una vez hayas encontrado tu juego ejecuta las siguientes líneas en la misma shell:
-```
-python mapper-Parecidos.py | python reducer-Parecidos.py 
-```
+
+>**python mapper-Parecidos.py | python reducer-Parecidos.py** 
+
 Deberia salir algo así:
 
 ![Inicio](/parecidos.jpg)
 
 y a continuación:
-```
-python mapper-Medias.py | python reducer-Medias.py
-```
+
+>**python mapper-Medias.py | python reducer-Medias.py**
+
 Deberia salir algo así:
 
 ![Inicio](/medias.jpg)
 
 y para acabar:
-```
-python mapper-Salida.py | python reducer-Salida.py
-```
+
+>**python mapper-Salida.py | python reducer-Salida.py**
+
 Deberia salir algo así:
 
 ![Inicio](/salida.jpg)
