@@ -68,7 +68,7 @@ y para acabar:
 **python mapper-Salida.py | python reducer-Salida.py**
 Deberia salir algo así:
 
-![Inicio](/salidas.jpg)
+![Inicio](/salida.jpg)
 
 
 ### Extensiones
