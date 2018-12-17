@@ -196,6 +196,40 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ### Sobre el proyecto
 
 ### Modo de uso
+
+Deberás descargarte el archivo mencionado en el apartado de dataset, junto a los archivos .py necesarios(buscaNombre, mapReduce de parecidos, medias y salida). Una vez descargados abre una shell que tenga instalada python y ejecuta la siguiente linea en ella:
+
+**python buscaNombre.py "(Nombre de tu juego)"** poniendo el juego en cuestion entre las comillas. 
+
+Es muy importante que el juego este exactamente escrito como en el dataset, asi que ten cuidado. Debería salir algo así:
+
+![Inicio](/buscaNombre.jpg)
+
+Una vez hayas encontrado tu juego ejecuta las siguientes líneas en la misma shell:
+
+**python mapper-Parecidos.py | python reducer-Parecidos.py** 
+
+Deberia salir algo así:
+
+![Inicio](/parecidos.jpg)
+
+y a continuación:
+
+**python mapper-Medias.py | python reducer-Medias.py**
+
+Deberia salir algo así:
+
+![Inicio](/medias.jpg)
+
+y para acabar:
+
+**python mapper-Salida.py | python reducer-Salida.py**
+
+Deberia salir algo así:
+
+![Inicio](/salida.jpg)
+
+
 ### Extensiones
 ### Aprendizaje
 ### Valoracion / conclusion / futuro
