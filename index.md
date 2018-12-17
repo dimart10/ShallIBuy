@@ -1,7 +1,9 @@
 ## Sobre el proyecto
 
 Shall I Buy es una aplicación de asesoramiento de compra de videojuegos en Steam. El objetivo final es ofrecer una serie de características objetivas sobre un juego por el que pregunte el usuario, con el fin de indicarle si las valoraciones críticas están por encima o por debajo de la media, si el juego consta de una comunidad activa, o del precio por ejemplo. Con estos valores obtenidos y analizados, se le indica al usuario si merece la pena obtener el juego en cuestión, o hay mejores opciones dentro del mismo género o tipo de juego que puedan ofrecer más al usuario.  
-El proyecto nació como trabajo final de una asignatura (más información en el apartado Sobre Nosotros), pero esperamos que siga siendo útil más allá de eso, y que sea empleado de manera natural con el fin propuesto.
+
+Si eres un usuario, esperamos que Shall I Buy le resulte tanto útil como cómodo a la hora de utilizarlo. A continuación le explicamos en más detalle todas las características del proyecto. 
+
 
 ## Dataset
 
@@ -241,7 +243,7 @@ print ("")
 print ("-----------------------------------------------------")
 print ("")
 ```
-### Modo de uso
+## Modo de uso
 
 Deberás descargarte el archivo mencionado en el apartado de dataset, junto a los archivos .py necesarios(buscaNombre, mapReduce de parecidos, medias y salida). Una vez descargados abre una shell que tenga instalada python y ejecuta la siguiente linea en ella:
 ```
@@ -296,7 +298,7 @@ Somos un grupo de estudiantes del grado de Desarrollo de Videojuegos en la Unive
 - Alberto [Alcasa04](https://github.com/alcasa04)
 - Héctor [hectormr98](https://github.com/hectormr98)
 
-El proyecto lo realizamos para la asignatura de Cloud and Big Data, con el fin de aplicar los conceptos aprendidos. El resultado final es éste. Si eres un usuario, esperamos que Shall I Buy le resulte tanto útil como cómodo a la hora de utilizarlo. A continuación le explicamos en más detalle todas las características del proyecto. 
+El proyecto lo realizamos para la asignatura de Cloud and Big Data, con el fin de aplicar los conceptos aprendidos. El resultado final es éste. Esperamos que sea de su agrado.
 
 ### Markdown
 
