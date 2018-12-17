@@ -52,6 +52,7 @@ Es muy importante que el juego este exactamente escrito como en el dataset, asi 
 Una vez hayas encontrado tu juego ejecuta las siguientes líneas en la misma shell:
 
 **python mapper-Parecidos.py | python reducer-Parecidos.py** 
+
 Deberia salir algo así:
 
 ![Inicio](/parecidos.jpg)
@@ -59,6 +60,7 @@ Deberia salir algo así:
 y a continuación:
 
 **python mapper-Medias.py | python reducer-Medias.py**
+
 Deberia salir algo así:
 
 ![Inicio](/medias.jpg)
@@ -66,6 +68,7 @@ Deberia salir algo así:
 y para acabar:
 
 **python mapper-Salida.py | python reducer-Salida.py**
+
 Deberia salir algo así:
 
 ![Inicio](/salida.jpg)
