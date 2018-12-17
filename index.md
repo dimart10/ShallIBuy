@@ -1,15 +1,7 @@
 ## Sobre el proyecto
 
 Shall I Buy es una aplicación de asesoramiento de compra de videojuegos en Steam. El objetivo final es ofrecer una serie de características objetivas sobre un juego por el que pregunte el usuario, con el fin de indicarle si las valoraciones críticas están por encima o por debajo de la media, si el juego consta de una comunidad activa, o del precio por ejemplo. Con estos valores obtenidos y analizados, se le indica al usuario si merece la pena obtener el juego en cuestión, o hay mejores opciones dentro del mismo género o tipo de juego que puedan ofrecer más al usuario.  
-
-## Sobre nosotros
-
-Somos un grupo de estudiantes del grado de Desarrollo de Videojuegos en la Universidad Complutense de Madrid (UCM), nuestros nombres son:
-- Diego [Dimart10](https://github.com/dimart10)
-- Gonzalo [gonzsa04](https://github.com/gonzsa04)
-- Alberto [Alcasa04](https://github.com/alcasa04)
-- Héctor [hectormr98](https://github.com/hectormr98)
-El proyecto lo realizamos para la asignatura de Cloud and Big Data, con el fin de aplicar los conceptos aprendidos. El resultado final es éste. Si eres un usuario, esperamos que Shall I Buy le resulte tanto útil como cómodo a la hora de utilizarlo. A continuación le explicamos en más detalle todas las características del proyecto. 
+El proyecto nació como trabajo final de una asignatura (más información en el apartado Sobre Nosotros), pero esperamos que siga siendo útil más allá de eso, y que sea empleado de manera natural con el fin propuesto.
 
 ## Dataset
 
@@ -284,9 +276,9 @@ Deberia salir algo así:
 ![Inicio](/salida.jpg)
 
 
-### Extensiones
-### Aprendizaje
-### Conclusión y valoración general de proyecto
+## Extensiones
+## Aprendizaje
+## Conclusión y valoración general de proyecto
 A la hora de realizar este trabajo, nos hemos ido encontrando con diversos problemas. Los problemas iniciales han surgido en gran medida del poco conocimiento previo que poseíamos sobre las tecnologías y métodos utilizados. No estábamos familiarizados con el uso de Linux, al cual nos hemos ido acostumbrando. Además, nunca habíamos programado en Python, por lo que surgieron varios problemas de código.
 El desconocimiento o mal uso de lo anterior dicho hizo que no pudiéramos planificar del todo bien, ya que no sabíamos la cantidad de tiempo estimada que nos llevaría cada parte del proyecto. Así mismo, el reparto de tareas estaba desequilibrado y tuvimos que replanificar varias veces, lo que conllevaba una pérdida aún mayor de tiempo.
 A todo esto se añadió la suma de entregas de trabajos y exámenes no planificados de otras asignaturas que cursamos, haciendo más difícil aún el desarrollo normal de este proyecto.
@@ -295,7 +287,16 @@ A pesar de los inconvenientes, nos hemos quedado con un buen sabor de boca. La a
 También nos hemos dado cuenta de que las metodologías utilizadas para realizar el proyecto (y la asignatura en general) son bastante interesantes, además de extensibles. Los conocimientos que hemos adquirido a lo largo de la asignatura pueden llegar a sernos útiles de cara al futuro, ya que tiene mútliples aplicaciones posiblemente relacionadas con nuestros intereses.
 
 Podemos decir que los resultados obtenidos han superado con creces a las dificultades que hemos tenido para hacerlo.
-### Nosotros
+
+## Sobre nosotros
+
+Somos un grupo de estudiantes del grado de Desarrollo de Videojuegos en la Universidad Complutense de Madrid (UCM), nuestros nombres son:
+- Diego [Dimart10](https://github.com/dimart10)
+- Gonzalo [gonzsa04](https://github.com/gonzsa04)
+- Alberto [Alcasa04](https://github.com/alcasa04)
+- Héctor [hectormr98](https://github.com/hectormr98)
+
+El proyecto lo realizamos para la asignatura de Cloud and Big Data, con el fin de aplicar los conceptos aprendidos. El resultado final es éste. Si eres un usuario, esperamos que Shall I Buy le resulte tanto útil como cómodo a la hora de utilizarlo. A continuación le explicamos en más detalle todas las características del proyecto. 
 
 ### Markdown
 
