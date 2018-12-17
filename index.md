@@ -41,6 +41,10 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ### Diseño y funcionamiento
 ### Modo de uso
 
+Deberás descargarte el archivo mencionado en el apartado de dataset, junto a los archivos .py necesarios(buscaNombre, mapReduce de parecidos, medias y salida. Una vez descargados abre una shell que tenga instalada python y deberas ejecutar la siguiente linea en ella:
+
+**python buscaNombre.py "(Nombre de tu juego)"** poniendo el juego en cuestion entre las comillas. Debería salir algo así:
+
 ![Inicio](/buscaNombre.jpg)
 
 ### Extensiones
