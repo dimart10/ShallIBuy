@@ -280,7 +280,6 @@ Deberia salir algo así:
 
 ## Extensiones
 Nuestra aplicación hace su trabajo, pero es limitada. Para mejorar este proyecto habíamos pensado en varias modificaciones o extensiones, las cuales, por falta de tiempo o desconocimiento, no hemos llegado a realizar. Por ejemplo, una manera de mejorar las recomendaciones de videojuegos sería utilizar un posible historial de ofertas para mostrar si es buen momento o no para comprarlo, pero no hemos encontrado un dataset adecuado para ello. Además, se podría hacer más clara la recomendación creando un CSV que mostrara por columnas, datos sobre el juego buscado. Y cómo no, seguramente haya maneras de mejorar nuestra claridad de código.
-## Aprendizaje
 ## Conclusión y valoración general de proyecto
 A la hora de realizar este trabajo, nos hemos ido encontrando con diversos problemas. Los problemas iniciales han surgido en gran medida del poco conocimiento previo que poseíamos sobre las tecnologías y métodos utilizados. No estábamos familiarizados con el uso de Linux, al cual nos hemos ido acostumbrando. Además, nunca habíamos programado en Python, por lo que surgieron varios problemas de código.
 El desconocimiento o mal uso de lo anterior dicho hizo que no pudiéramos planificar del todo bien, ya que no sabíamos la cantidad de tiempo estimada que nos llevaría cada parte del proyecto. Así mismo, el reparto de tareas estaba desequilibrado y tuvimos que replanificar varias veces, lo que conllevaba una pérdida aún mayor de tiempo.
