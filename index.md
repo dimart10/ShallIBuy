@@ -1,5 +1,16 @@
 ## Sobre el proyecto
 
+Shall I Buy es una aplicación de asesoramiento de compra de videojuegos en Steam. El objetivo final es ofrecer una serie de características objetivas sobre un juego por el que pregunte el usuario, con el fin de indicarle si las valoraciones críticas están por encima o por debajo de la media, si el juego consta de una comunidad activa, o del precio por ejemplo. Con estos valores obtenidos y analizados, se le indica al usuario si merece la pena obtener el juego en cuestión, o hay mejores opciones dentro del mismo género o tipo de juego que puedan ofrecer más al usuario.  
+
+## Sobre nosotros
+
+Somos un grupo de estudiantes del grado de Desarrollo de Videojuegos en la Universidad Complutense de Madrid (UCM), nuestros nombres son:
+- Diego [Dimart10](https://github.com/dimart10)
+- Gonzalo [gonzsa04](https://github.com/gonzsa04)
+- Alberto [Alcasa04](https://github.com/alcasa04)
+- Héctor [hectormr98](https://github.com/hectormr98)
+El proyecto lo realizamos para la asignatura de Cloud and Big Data, con el fin de aplicar los conceptos aprendidos. El resultado final es éste. Si eres un usuario, esperamos que Shall I Buy le resulte tanto útil como cómodo a la hora de utilizarlo. A continuación le explicamos en más detalle todas las características del proyecto. 
+
 ## Dataset
 
 El dataset usado lo obtenimos de [data.world](https://data.world/craigkelly/steam-game-data), donde está alojado de forma pública para uso académico. El dataset fue creado por [Craigh Kelly](https://data.world/craigkelly) en 2016 con información obtenida de la API de Steam y la página [steamspy.com](https://steamspy.com/). 
