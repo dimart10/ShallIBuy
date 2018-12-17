@@ -43,3 +43,5 @@ for line in sys.stdin:
 with open('auxMedias.csv', 'wb') as csvfile:
 	salidaCSV = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 	salidaCSV.writerow([scoreTotal/scoreSum, recomTotal/recomSum, ownerTotal/ownerSum, playerTotal/playerSum, priceTotal/priceSum])
+	print("Medias calculadas")
+

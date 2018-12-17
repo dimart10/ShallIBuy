@@ -4,7 +4,7 @@ import sys
 import re
 import csv
 
-atributos = ["nota de metacritic", "recomendaciones", "numero de propietarios", "numero de jugadores", "precio", "-Fecha de lanzamiento: ", "-Soporta Mando: ", "-Es gratis: ", "-Windows: ", "-Linux: ", "-Mac: "]
+atributos = ["nota de metacritic", "recomendaciones", "numero de propietarios", "numero de jugadores", "precio", "-Fecha de lanzamiento: ", "-Soporta Mando: ", "-Es gratis: ", "-Soporta Windows: ", "-Soporta Linux: ", "-Soporta Mac: "]
 i = 0
 score = 0
 
