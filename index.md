@@ -275,7 +275,15 @@ Deberia salir algo así:
 
 ### Extensiones
 ### Aprendizaje
-### Valoracion / conclusion / futuro
+### Conclusión y valoración general de proyecto
+A la hora de realizar este trabajo, nos hemos ido encontrando con diversos problemas. Los problemas iniciales han surgido en gran medida del poco conocimiento previo que poseíamos sobre las tecnologías y métodos utilizados. No estábamos familiarizados con el uso de Linux, al cual nos hemos ido acostumbrando. Además, nunca habíamos programado en Python, por lo que surgieron varios problemas de código.
+El desconocimiento o mal uso de lo anterior dicho hizo que no pudiéramos planificar del todo bien, ya que no sabíamos la cantidad de tiempo estimada que nos llevaría cada parte del proyecto. Así mismo, el reparto de tareas estaba desequilibrado y tuvimos que replanificar varias veces, lo que conllevaba una pérdida aún mayor de tiempo.
+A todo esto se añadió la suma de entregas de trabajos y exámenes no planificados de otras asignaturas que cursamos, haciendo más difícil aún el desarrollo normal de este proyecto.
+
+A pesar de los inconvenientes, nos hemos quedado con un buen sabor de boca. La aplicación que hemos desarrollado ha cumplido con lo que prometía; es sencilla, pero funcional. Sabemos que probablemente no es un proyect que pueda parecer muy grande a primera vista, pero tiene mucho trabajo de aprendizaje de fondo.
+También nos hemos dado cuenta de que las metodologías utilizadas para realizar el proyecto (y la asignatura en general) son bastante interesantes, además de extensibles. Los conocimientos que hemos adquirido a lo largo de la asignatura pueden llegar a sernos útiles de cara al futuro, ya que tiene mútliples aplicaciones posiblemente relacionadas con nuestros intereses.
+
+Podemos decir que los resultados obtenidos han superado con creces a las dificultades que hemos tenido para hacerlo.
 ### Nosotros
 
 ### Markdown
