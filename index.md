@@ -1,8 +1,8 @@
 ## Sobre el proyecto
 
-Shall I Buy es una aplicación de asesoramiento de compra de videojuegos en Steam. El objetivo final es ofrecer una serie de características objetivas sobre un juego por el que pregunte el usuario, con el fin de indicarle si las valoraciones críticas están por encima o por debajo de la media, si el juego consta de una comunidad activa, o del precio por ejemplo. Con estos valores obtenidos y analizados, se le indica al usuario si merece la pena obtener el juego en cuestión, o hay mejores opciones dentro del mismo género o tipo de juego que puedan ofrecer más al usuario.  
+Shall I Buy es una aplicación de asesoramiento de compra de videojuegos en la plataforma de venta digital Steam. El objetivo final es ofrecer una serie de características objetivas sobre un juego por el que pregunte el usuario, con el fin de indicarle si las valoraciones críticas están por encima o por debajo de la media, si el juego consta de una comunidad activa, o del precio por ejemplo. Con estos valores obtenidos y analizados, se le indica al usuario si merece la pena obtener el juego en cuestión, o hay mejores opciones dentro del mismo género o tipo de juego que puedan ofrecer más al usuario.  
 
-Si eres un usuario, esperamos que Shall I Buy le resulte tanto útil como cómodo a la hora de utilizarlo. A continuación le explicamos en más detalle todas las características del proyecto. 
+Si eres un usuario, esperamos que Shall I Buy le resulte tanto útil como cómodo a la hora de utilizarlo. A continuación explicamos en más detalle todas las características del proyecto. 
 
 
 ## Dataset
@@ -278,18 +278,26 @@ Deberia salir algo así:
 ![Inicio](/salida.jpg)
 
 
-## Extensiones
-Nuestra aplicación hace su trabajo, pero es limitada. Para mejorar este proyecto habíamos pensado en varias modificaciones o extensiones, las cuales, por falta de tiempo o desconocimiento, no hemos llegado a realizar:
--Una manera de mejorar las recomendaciones de videojuegos sería utilizar un posible historial de ofertas para mostrar si es buen momento o no para comprarlo, pero no hemos encontrado un dataset adecuado para ello.
--Se podría hacer más clara la recomendación creando un CSV que mostrara, por columnas, datos sobre el juego buscado.
--Además, seguramente haya maneras de mejorar nuestra claridad de código.
+## Posibles mejoras y extensiones
+
+Nuestra aplicación hace su trabajo, pero es limitada. Para mejorar este proyecto habíamos pensado en varias modificaciones o extensiones que podrían servir para mejorar la aplicación en un futuro:
+- **Limpieza del código**. Algunas partes del código no son tan entendibles como deberían, en parte debido a nuestro poco conocimiento de python. En particular sería deseable que los números de las columnas estuvieran guardados en un fichero auxiliar.
+
+- **Script**. La aplicación sería más cómoda de usar si hubiera un script que se encargara de llamar a los diferentes archivos y que gestionase la interacción con el usuario.
+
+- **Mejorar el algoritmo**. Además de las mejoras de eficiencia que muy probablemente se podrían hacer a nuestro algoritmo, también sería interesante usar más atributos del dataset a la hora de calcular la valoración del juego.
+
+- **Dataset**. El dataset que utilizamos, si bien nos proporciona los datos que buscábamos, está desactualizado pues se creo en el año 2016, y no se corresponde con el estado actual de la plataforma. Un dataset más actual y con más datos permitiría mejorar notablemente la precisión de la aplicación, aunque requiriera cierto trabajo adaptarla a este.
+
+- **Historial de ofertas**. En la idea original de este proyecto además de decir al usuario si debería comprar un juego, se quería decirle en que momento sería mejor hacerlo. Para esto pensamos utilizar un dataset con datos históricos sobre las ofertas de los juegos. Sin embargo, no encontramos ningún dataset de estas cualidades, ya que esa información no está disponible desde la api de steam y no hay ninguna recopilación de datos pública. 
 
 ## Conclusión y valoración general de proyecto
+
 A la hora de realizar este trabajo, nos hemos ido encontrando con diversos problemas. Los problemas iniciales han surgido en gran medida del poco conocimiento previo que poseíamos sobre las tecnologías y métodos utilizados. No estábamos familiarizados con el uso de Linux, al cual nos hemos ido acostumbrando. Además, nunca habíamos programado en Python, por lo que surgieron varios problemas de código.
-El desconocimiento o mal uso de lo anterior dicho hizo que no pudiéramos planificar del todo bien, ya que no sabíamos la cantidad de tiempo estimada que nos llevaría cada parte del proyecto. Así mismo, el reparto de tareas estaba desequilibrado y tuvimos que replanificar varias veces, lo que conllevaba una pérdida aún mayor de tiempo.
-A todo esto se añadió la suma de entregas de trabajos y exámenes no planificados de otras asignaturas que cursamos, haciendo más difícil aún el desarrollo normal de este proyecto.
+El desconocimiento o mal uso de lo anterior dicho hizo que no pudiéramos planificar del todo bien, ya que no sabíamos la cantidad de tiempo estimada que nos llevaría cada parte del proyecto. A todo esto se añadió la suma de entregas de trabajos y exámenes no planificados de otras asignaturas que cursamos, haciendo más difícil aún el desarrollo normal de este proyecto.
 
 A pesar de los inconvenientes, nos hemos quedado con un buen sabor de boca. La aplicación que hemos desarrollado ha cumplido con lo que prometía; es sencilla, pero funcional. Sabemos que probablemente no es un proyecto que pueda parecer muy grande a primera vista, pero tiene mucho trabajo de aprendizaje de fondo.
+
 También nos hemos dado cuenta de que las metodologías utilizadas para realizar el proyecto (y la asignatura en general) son bastante interesantes, además de extensibles. Los conocimientos que hemos adquirido a lo largo de la asignatura pueden llegar a sernos útiles de cara al futuro, ya que tiene mútliples aplicaciones posiblemente relacionadas con nuestros intereses.
 
 Podemos decir que los resultados obtenidos han superado con creces a las dificultades que hemos tenido para hacerlo.
@@ -302,4 +310,8 @@ Somos un grupo de estudiantes del grado de Desarrollo de Videojuegos en la Unive
 - [Alberto Casado](https://github.com/alcasa04)
 - [Héctor Marcos](https://github.com/hectormr98)
 
-El proyecto lo realizamos para la asignatura de Cloud and Big Data, con el fin de aplicar los conceptos aprendidos. El resultado final es éste. Esperamos que sea de su agrado.
+El proyecto lo realizamos para la asignatura Cloud and Big Data, con el fin de aplicar los conceptos aprendidos. El resultado final es éste. Esperamos que sea de su agrado.
+
+## Enlaces
+
+- [Página en GitHub del proyecto](https://github.com/dimart10/ShallIBuy)
