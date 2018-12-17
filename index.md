@@ -294,10 +294,10 @@ Podemos decir que los resultados obtenidos han superado con creces a las dificul
 ## Sobre nosotros
 
 Somos un grupo de estudiantes del grado de Desarrollo de Videojuegos en la Universidad Complutense de Madrid (UCM), nuestros nombres son:
-- Diego [Dimart10](https://github.com/dimart10)
-- Gonzalo [gonzsa04](https://github.com/gonzsa04)
-- Alberto [Alcasa04](https://github.com/alcasa04)
-- Héctor [hectormr98](https://github.com/hectormr98)
+- [Diego Martínez](https://github.com/dimart10)
+- [Gonzalo Sanz](https://github.com/gonzsa04)
+- [Alberto Casado](https://github.com/alcasa04)
+- [Héctor Marcos](https://github.com/hectormr98)
 
 El proyecto lo realizamos para la asignatura de Cloud and Big Data, con el fin de aplicar los conceptos aprendidos. El resultado final es éste. Esperamos que sea de su agrado.
 
