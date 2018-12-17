@@ -40,6 +40,9 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ### Dataset
 ### Diseño y funcionamiento
 ### Modo de uso
+
+![Inicio](/buscaNombre.jpg)
+
 ### Extensiones
 ### Aprendizaje
 ### Valoracion / conclusion / futuro
